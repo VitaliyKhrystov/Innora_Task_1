@@ -1,14 +1,6 @@
-<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
- xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
- xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
- xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
- xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
- xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
- xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="850.4,940" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="40">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -31,10 +23,28 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-    </sco:Collection>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="63">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
@@ -60,7 +70,164 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-    </sco:Collection>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+    </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1"/>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="641.6,875.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="webSitesDict" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="579.2,73.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+          <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">webSitesDict</CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+          <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1" xml:space="preserve">new Dictionary&lt;string, string&gt;() {
+    { "Roxetka", "https://rozetka.com.ua/ua/"},
+    { "Comfy", "https://comfy.ua/ua/"},
+    { "Foxtrot", "https://www.foxtrot.com.ua/uk"}
+}</CSharpValue>
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="697.6,1744.8" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="web" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="662.4,1610.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If DisplayName="If (Comfy)" sap:VirtualizedContainerService.HintSize="600,1487.2" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">web.Key.Equals("Comfy")</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="518.4,1221.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побу" sap:VirtualizedContainerService.HintSize="433.6,1098.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="89026714-5103-4112-819d-93e4c46ec8ae" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,872" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="ComfyDataTable" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Смартфони та телефони'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89026714-5103-4112-819d-93e4c46ec8ae" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/" DesignTimeRectangle="170, 446, 289, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Смартфони та телефони'" FullSelectorArgument="&lt;webctrl aaname='                 Смартфони та телефони             ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Смартфони та телефони             ' tag='A' type='' class='menu-desktop__top-link block q-ml-md icon-comfy menu-desktop__top-link--children' check:innerText='Смартфони та телефони' /&gt;" Guid="7b474089-5be7-4933-8f62-afc80e4a3fbb" ImageBase64="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" InformativeScreenshot="412d569d8f13b37e1025a24d5c3a4bb5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Смартфони Samsung'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89026714-5103-4112-819d-93e4c46ec8ae" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/telephone-smartfon/" DesignTimeRectangle="824, 645, 264, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Смартфони Samsung'" FullSelectorArgument="&lt;webctrl aaname='Смартфони Samsung' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Смартфони Samsung' tag='H2' type='' class='portal-tile__title' check:innerText='Смартфони Samsung' /&gt;" Guid="61a95a7e-f5bb-40a6-b2b1-9f4f79a6d1a9" ImageBase64="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" InformativeScreenshot="19b6201d1f7521e84666e53906474322.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Смартфони і телефони: купити за низькою ціною в Києві, Україні. Найнижча ціна на смартфони і телефони в інтернет-магазині Comfy (Комфі)' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Назва' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ціна' ReferenceName='Column5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Посилання на товар' ReferenceName='Column6'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.products-list-item__actions-price-current' name='Column5' attr='text' /&gt;&lt;column exact='1' name='Column6' attr='href'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="89026714-5103-4112-819d-93e4c46ec8ae" Version="V3">
+                            <uix:NExtractData.DataTable>
+                              <InOutArgument x:TypeArguments="sd:DataTable">
+                                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">ComfyDataTable</CSharpReference>
+                              </InOutArgument>
+                            </uix:NExtractData.DataTable>
+                            <uix:NExtractData.NextLink>
+                              <uix:TargetAnchorable BrowserURL="https://comfy.ua/ua/smartfon/brand__samsung/" DesignTimeRectangle="1626, 874, 186, 88" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Вперед →'" FullSelectorArgument="&lt;webctrl aaname='     Вперед → ' parentid='q-app' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Вперед → ' parentid='q-app' tag='A' type='' class='pagination-item p-i p-i--meta' check:innerText='Вперед →' /&gt;" Guid="04ac4f48-c93a-4934-9140-b29e4d01211c" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Телефон Samsung купити в Києві, Україні. Телефони Samsung низька ціна в інтернет магазині Comfy' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                            </uix:NExtractData.NextLink>
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="532, 533, 1281, 9659" DesignTimeScaleFactor="1.25" FriendlyName="'ТОП продажів'" FullSelectorArgument="&lt;webctrl class='products-catalog' parentid='q-app' tag='DIV' /&gt;" Guid="a02610fa-9f15-416a-8f10-c29d3378106c" InformativeScreenshot="e216414648866fe43c58d88c83fd2ea3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Телефон Samsung купити в Києві, Україні. Телефони Samsung низька ціна в інтернет магазині Comfy' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="337.6,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Data Samsung" WorkbookPath="comfy_data.xlsx">
+                            <ui:WriteRange.DataTable>
+                              <InArgument x:TypeArguments="sd:DataTable">
+                                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">ComfyDataTable</CSharpValue>
+                              </InArgument>
+                            </ui:WriteRange.DataTable>
+                          </ui:WriteRange>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="313db5bf6396f592dfece90eefb48eb7.jpg" Selector="&lt;html app='chrome.exe' title='Comfy – Інтернет магазин побутової техніки та електроніки. Мережа магазинів побутової техніки та електроніки в Києві, Україні | Comfy (Комфі)' /&gt;" Url="https://comfy.ua/ua/" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </If.Then>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <ui:ForEach.Values>
+        <InArgument x:TypeArguments="sc:IEnumerable">
+          <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">webSitesDict</CSharpValue>
+        </InArgument>
+      </ui:ForEach.Values>
+    </ui:ForEach>
+  </Sequence>
 </Activity>
